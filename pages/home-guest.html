@@ -1,0 +1,82 @@
+
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>IPSSI Timer</h2>
+                <span class="subtitle ml-auto mr-auto m-5">Vous l'avez trouvé, ne perdez plus votre temps à choisir des outils gratuits pour gérer votre temps de travail !</span>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/login" class="w-70 m-auto">
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control rounded form-control-lg" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded form-control-lg" placeholder="Mot de passe">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="button" class="btn btn-lg rounded btn-outline-light" id="btnLogin">Se connecter</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="register">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="mb-5">S'inscrire</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/register" class="w-70 m-auto">
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control rounded form-control-lg" name="name" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control rounded form-control-lg" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded form-control-lg" name="password" placeholder="Mot de passe">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded form-control-lg" name="password_confirmation" placeholder="Confirmation mot de passe">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="button" class="btn btn-lg rounded btn-primary" id="btnRegister">S'inscrire</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalError">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Erreur</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Erreur
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
